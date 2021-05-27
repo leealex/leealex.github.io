@@ -1,0 +1,102 @@
+body, html {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-image: url(/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 30%;
+}
+
+.owl-carousel {
+    display: block;
+    padding: 10px 0;
+}
+
+.contacts {
+    text-align: center;
+    color: #999999;
+    padding: 20px 0;
+}
+
+.contacts a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.contacts a:hover {
+    color: #aac065;
+}
+
+.header {
+    background: RGBA(0,0,0,0.6) url('/images/grid-1.png');
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    height: 30%;
+}
